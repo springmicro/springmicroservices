@@ -5,18 +5,17 @@
     <artifactId>itemsharing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.itemsharing.userservice</groupId>
-  <artifactId>itemsharing.userservice</artifactId>
+  <artifactId>itemsharing.configserver</artifactId>
   <packaging>jar</packaging>
-  <name>userservice</name>
-  <description>userservice for item sharing app</description>
+  <name>configserver</name>
+  <description>config server for item sharing app</description>
   
   <dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR7</version>
+				<version>Camden.SR5</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -30,30 +29,15 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-security</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-client</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
