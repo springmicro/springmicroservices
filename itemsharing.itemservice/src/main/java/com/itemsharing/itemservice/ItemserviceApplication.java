@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 import com.itemsharing.itemservice.model.Item;
 import com.itemsharing.itemservice.model.User;
@@ -13,6 +15,8 @@ import com.itemsharing.itemservice.service.ItemService;
 import com.itemsharing.itemservice.service.UserService;
 
 @SpringBootApplication
+@EnableFeignClients
+@EnableEurekaClient
 public class ItemserviceApplication implements CommandLineRunner{
 
 	@Autowired

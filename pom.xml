@@ -30,6 +30,7 @@
 		<module>itemsharing.userservice</module>
 		<module>itemsharing.itemservice</module>
 		<module>itemsharing.configserver</module>
+		<module>itemsharing.eurekaserver</module>
 	</modules>
 
 	<dependencies>
