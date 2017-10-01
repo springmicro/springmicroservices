@@ -1,0 +1,33 @@
+
+security:
+  basic:
+    enabled: false
+    
+server:
+  port: 5555
+  
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      
+zuul:
+  routes:
+    userservice: /user/**
+    itemservice: /item/**
+  ignored-services: '*'
+  prefix: /api
+  sensitive-headers: Cookie, Set-Cookie
+  
+    
+#Setting the logging levels for the service
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.itemsharing: DEBUG
+    
