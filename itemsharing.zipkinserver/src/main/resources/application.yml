@@ -1,0 +1,8 @@
+server:
+  port: 9411
+  
+logging:
+  level:
+    com.netflix: WARN
+    com.springframework.web: WARN
+    com.itemsharing: DEBUG

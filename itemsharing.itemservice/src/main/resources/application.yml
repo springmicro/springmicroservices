@@ -29,3 +29,8 @@ logging:
     com.netflix: WARN
     org.springframework.web: WARN
     com.itemsharing: DEBUG
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8901/user

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zuulservice
+  profiles:
+    active: default
+  zipkin:
+    baseUrl: http://localhost:9411
+  cloud:
+    config:
+      uri: http://localhost:8888
