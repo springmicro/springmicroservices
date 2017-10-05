@@ -9,4 +9,4 @@ spring:
   cloud:
     config:
 #      enabled: false
-      uri: http://54.172.185.62:8888
+      uri: http://localhost:8888

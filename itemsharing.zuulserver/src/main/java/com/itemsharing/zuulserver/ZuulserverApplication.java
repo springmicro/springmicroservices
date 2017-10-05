@@ -24,20 +24,20 @@ public class ZuulserverApplication {
 		return new AlwaysSampler();
 	}
 	
-	@Bean
-	public RestTemplate getRestTemplate() {
-		RestTemplate template = new RestTemplate();
-		List interceptors = template.getInterceptors();
-		
-		if(interceptors == null) {
-			template.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
-		} else {
-			interceptors.add(new UserContextInterceptor());
-			template.setInterceptors(interceptors);
-		}
-		
-		return template;
-	}
+//	@Bean
+//	public RestTemplate getRestTemplate() {
+//		RestTemplate template = new RestTemplate();
+//		List interceptors = template.getInterceptors();
+//		
+//		if(interceptors == null) {
+//			template.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
+//		} else {
+//			interceptors.add(new UserContextInterceptor());
+//			template.setInterceptors(interceptors);
+//		}
+//		
+//		return template;
+//	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ZuulserverApplication.class, args);
