@@ -16,6 +16,7 @@ import com.itemsharing.zuulserver.util.UserContextInterceptor;
 
 @SpringBootApplication
 @EnableZuulProxy
+@EnableEurekaClient
 public class ZuulserverApplication {
 	
 	//spring.sleuth.sampler.percentage .5

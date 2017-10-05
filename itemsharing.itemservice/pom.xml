@@ -17,7 +17,7 @@
 		<start-class>com.itemsharing.itemservice.ItemserviceApplication</start-class>
 		<docker.image.name>itemservice</docker.image.name>
 		<docker.image.tag>latest</docker.image.tag>
-		
+
 	</properties>
 
 	<dependencyManagement>
@@ -33,6 +33,10 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -164,7 +168,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				
+
 			</plugin>
 		</plugins>
 	</build>
