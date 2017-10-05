@@ -1,0 +1,8 @@
+authorizationservice:
+  image: raydeng83/authorizationservice
+  mem_limit: 1073741824
+  ports:
+    - "8901:8901"
+  environment:
+    ENCRYPT_KEY: "IMSYMMETRIC"
+    CONFIGSERVER_URI: "http://54.172.185.62/:8888"

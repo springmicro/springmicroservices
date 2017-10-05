@@ -4,8 +4,9 @@ spring:
   profiles:
     active: default
   zipkin:
-    baseUrl: http://localhost:9411
+    baseUrl: http://54.172.185.62:9411
   cloud:
     config:
-      uri: http://localhost:8888
+#      enabled: false
+      uri: http://54.172.185.62:8888
     

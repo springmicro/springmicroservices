@@ -1,12 +1,9 @@
 spring:
   application:
-    name: zuulservice
+    name: zipkinservice
   profiles:
-    active: 
+    active:
       default
-  zipkin:
-    baseUrl: http://54.172.185.62:9411
   cloud:
     config:
-#      enabled: false
       uri: http://54.172.185.62:8888

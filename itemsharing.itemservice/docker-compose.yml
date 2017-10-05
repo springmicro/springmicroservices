@@ -1,0 +1,13 @@
+  itemservice:
+    image: raydeng83/itemservice
+    mem_limit: 1073741824
+    ports:
+       - "8082:8082"
+    environment:
+      ENCRYPT_KEY: "IMSYMMETRIC"
+      CONFIGSERVER_URI: "http://configservice:8888"
+  logspout:
+    image: gliderlabs/logspout
+    command: syslog://logs6.papertrailapp.com:19851
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

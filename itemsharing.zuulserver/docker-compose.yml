@@ -1,0 +1,12 @@
+  zuulservice:
+    image: raydeng83/zuulservice
+    mem_limit: 1073741824
+    ports:
+       - "5555:5555"
+    environment:
+      CONFIGSERVER_URI: "http://configservice:8888"
+  logspout:
+      image: gliderlabs/logspout
+      command: syslog://logs6.papertrailapp.com:19851
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock

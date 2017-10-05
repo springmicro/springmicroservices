@@ -24,13 +24,13 @@
 # 
 
 #Setting the logging levels for the service
-logging:
-  level:
-    com.netflix: WARN
-    org.springframework.web: WARN
-    com.itemsharing: DEBUG
-
-security:
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:8901/user
+#logging:
+#  level:
+#    com.netflix: WARN
+#    org.springframework.web: WARN
+#    com.itemsharing: DEBUG
+#
+#security:
+#  oauth2:
+#    resource:
+#      userInfoUri: http://localhost:8901/user

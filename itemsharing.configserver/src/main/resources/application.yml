@@ -9,6 +9,6 @@ spring:
           uri: https://github.com/springmicro/config-repo
           username: springmicro
           password: password123
-          search-paths: userservice, itemservice
+          search-paths: userservice, itemservice, authorizationservice, zuulservice, zipkinservice
         encrypt:
           enabled: false
