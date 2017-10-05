@@ -30,5 +30,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter{
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
 		endpoints.authenticationManager(authenticationManager).userDetailsService(userDetailsService);
 	}
+	
+	
 
 }

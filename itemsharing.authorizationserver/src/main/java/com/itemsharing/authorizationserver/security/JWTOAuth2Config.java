@@ -45,5 +45,5 @@ public class JWTOAuth2Config extends AuthorizationServerConfigurerAdapter{
 		.authenticationManager(authenticationManager)
 		.userDetailsService(userDetailsService);
 	}
-
+	
 }
